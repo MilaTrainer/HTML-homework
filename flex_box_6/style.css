@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-parent {
+    display: flex;
+    /*включаем flex-модель*/
+    background-color: #0356b5;
+    flex-direction: row;
+    /* flex-direction - это направление основной оси*/
+    /*
+     row-слева направо 
+     row-reverse- ось также X, но меняем напрвление, справа налево
+    flex-direction: column;
+    /*ось y - сверху вниз
+    flex-direction: column-reverse;
+    /*ось y- в обратном направоение сверху вниз*/
+    justify-content: flex-start;
+}
+
+.flex-item {
+    background-color: aqua;
+    padding: 20px;
+    border: black 1px solid;
+}
