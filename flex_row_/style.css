@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.flex-parent {
+    display: flex;
+    /*включаем flex-модель
+    height: 200px;*/
+    background-color: #0356b5;
+    flex-direction: row;
+    /* flex-direction - это направление основной оси
+     row-слева направо 
+     row-reverse- ось также X, но меняем напрвление, справа налево
+    flex-direction: column;
+    /*ось y - сверху вниз
+    flex-direction: column-reverse;
+    /*ось y- в обратном направоение сверху вниз*/
+    justify-content: flex-start;
+    /* выравние и распределение по основной оси
+    начало у основной оси*/
+    justify-content: flex-end;
+    justify-content: center;
+    /* между элементами одинаковое расстрояние*/
+    justify-content: space-around;
+    /*равное расстояние вокруг каждого элемента*/
+    /* align-items: center;
+    align-items: stretch;
+    /* растягивания по одной высоте
+    align-items: flex-start;
+    align-items: flex-end;
+    конец поперечной оси*/
+    justify-content: space-between;
+}
+
+.flex-parent {
+    width: 1000px;
+    min-height: 100vh;
+    /* 100% от окна браузера - 
+    вопрос: любого окна , планшета, телефона , ПК?*/
+    /*все что актуально для блочных элементов,актуально и для flex-box элементов*/
+    margin: auto;
+    /*display: inline-flex;
+    родительские элементы пойдут в строчку */
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* значение - перенос на новую строчку
+    разрешим перенос блоков на следующую строчку */
+    align-content: space-between;
+    /*распределять/выранивать строк внутри родетельского контейнера, по поперечной оси ,
+     как justify-content: только для строк, а не для элементоа
+    но по умолчание значение stretch*/
+}
+
+.flex-item {
+    background-color: aqua;
+    padding: 20px;
+    border: black 1px solid;
+    flex-basis: 18%;
+    /* если основаная ось ROW, то
+    Аналог width-ширины*/
+}
+
+
+/**/
